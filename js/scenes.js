@@ -1,10 +1,10 @@
 (function () {
   const LETTER_PARAGRAPHS = [
     '<strong>Selamat menempuh hidup baru, Indra dan Putri!</strong>',
-    'Semoga pernikahan kalian selalu dipenuhi cinta, kesabaran, rezeki yang baik, serta tawa yang tetap terdengar bahkan ketika hidup sedang tidak sesuai rencana.',
-    'Semoga kalau satu sedang marah, yang lain tetap ingat: kalian satu tim, bukan dua kubu yang sedang debat final Piala Dunia.',
+    'Jarak kali ini menang tipis, tetapi doa tetap berangkat tanpa perlu pesan tiket. Dan Izinkan temannya teman hadir lewat ucapan, doa, dan sedikit candaan.',
+    'Semoga kalau satu sedang marah, yang lain tetap ingat : "kalian satu tim, bukan dua kubu yang sedang debat final Piala Dunia."',
     'Dan semoga kata "terserah" tidak pernah menjadi teka-teki yang harus dipecahkan seumur hidup.',
-    'Mohon maaf saya belum bisa hadir langsung untuk ikut merayakan hari istimewa ini. Jarak kali ini menang tipis, tetapi doa tetap berangkat tanpa perlu pesan tiket.',
+    'Semoga pernikahan kalian selalu dipenuhi cinta, kesabaran, rezeki yang baik, serta tawa yang tetap terdengar bahkan ketika hidup sedang tidak sesuai rencana.',
     'Semoga kalian selalu menjadi tempat pulang yang paling nyaman bagi satu sama lain. Saat dunia terasa berat, semoga kalian tetap bisa saling menggenggam dan sesekali saling mentraktir makanan enak, karena cinta juga butuh asupan.',
     'Semoga kalian terus saling memilih, bukan hanya saat semuanya terasa mudah, tetapi juga ketika perjalanan sedang melelahkan.',
     'Semoga rumah yang kalian bangun menjadi tempat untuk bertumbuh, bercerita, saling menguatkan, dan menemukan kebahagiaan dalam hal-hal sederhana.',
