@@ -1,0 +1,10 @@
+# Keep downloaded invitation source files local unless explicitly requested.
+Pawiwahan Indra & Putri.html
+Pawiwahan Indra & Putri_files/
+CODEX_EXECUTION_GUIDE.md
+PROJECT_BLUEPRINT.MD
+
+# Local/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Operation: Titip Doa - mini-game ucapan pernikahan untuk Indra dan Putri">
+  <title>Operation: Titip Doa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Bisukan suara" aria-pressed="false">
+      <span aria-hidden="true">♪</span>
+    </button>
+
+    <section class="scene scene-briefing is-active" id="scene-briefing" aria-labelledby="briefing-title">
+      <div class="briefing-grid">
+        <div class="pixel-room" aria-hidden="true">
+          <div class="mission-screen">
+            <span class="scan-line"></span>
+            <span class="screen-dot"></span>
+            <span class="screen-route"></span>
+          </div>
+          <div class="courier-preview">
+            <span class="courier-head"></span>
+            <span class="courier-body"></span>
+            <span class="courier-bag"></span>
+            <span class="courier-leg leg-a"></span>
+            <span class="courier-leg leg-b"></span>
+          </div>
+          <div class="envelope-preview"></div>
+        </div>
+
+        <div class="briefing-panel">
+          <p class="eyebrow">Special Wedding Delivery - Indra &amp; Putri</p>
+          <h1 id="briefing-title">OPERATION: TITIP DOA</h1>
+          <div class="mission-copy">
+            <p>Tujuan: Mengantarkan doa terbaik untuk Indra &amp; Putri.</p>
+            <p>Isi paket: Satu amplop, seribu doa.</p>
+            <p>Peringatan: Paket ini mengandung harapan baik. Dilarang dibanting, ditinggalkan, atau dikirim kembali ke pengirim.</p>
+            <p>Kurir, bersiaplah. Pengantaran dimulai sekarang.</p>
+          </div>
+          <button class="primary-button" id="start-button" type="button">Mulai Pengantaran</button>
+        </div>
+      </div>
+      <p class="cc-note">CC: Dewi Sabiku dan calon teman hidup.</p>
+    </section>
+
+    <section class="scene scene-game" id="scene-game" aria-labelledby="game-title" aria-hidden="true" inert>
+      <div class="game-header">
+        <div>
+          <p class="eyebrow">Misi berjalan</p>
+          <h2 id="game-title">Antarkan amplop bercahaya</h2>
+        </div>
+        <div class="collectible-row" id="collectible-row" aria-live="polite"></div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game-canvas" width="960" height="540" aria-label="Area permainan side-scrolling"></canvas>
+        <button class="jump-button" id="jump-button" type="button">Lompat</button>
+      </div>
+      <p class="control-hint">Space / Arrow Up / tap area permainan untuk melompat.</p>
+    </section>
+
+    <section class="scene scene-delivery" id="scene-delivery" aria-labelledby="delivery-title" aria-hidden="true" inert>
+      <div class="delivery-stage">
+        <div class="wedding-gate" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="delivery-courier" aria-hidden="true"></div>
+        <div class="delivery-envelope" aria-hidden="true"></div>
+        <div class="glow-field" aria-hidden="true"></div>
+      </div>
+      <p class="eyebrow">Tujuan tercapai</p>
+      <h2 id="delivery-title">Amplop doa sudah tiba.</h2>
+    </section>
+
+    <section class="scene scene-letter" id="scene-letter" aria-labelledby="letter-title" aria-hidden="true" inert>
+      <div class="photo-collage" id="photo-collage" aria-hidden="true"></div>
+      <article class="letter-card">
+        <p class="eyebrow">Wedding Letter</p>
+        <h2 id="letter-title">Untuk Indra dan Putri</h2>
+        <div class="letter-text" id="letter-text" aria-live="polite"></div>
+        <button class="secondary-button" id="next-letter-button" type="button">Lanjut</button>
+      </article>
+    </section>
+
+    <section class="scene scene-final" id="scene-final" aria-labelledby="final-title" aria-hidden="true" inert>
+      <div class="final-card">
+        <p class="final-kicker">DOA TELAH SAMPAI.</p>
+        <h2 id="final-title">MISI SELESAI.</h2>
+        <p>Dari seorang kurir yang menitipkan doa.</p>
+        <div class="final-actions">
+          <a class="primary-button" id="invitation-link" href="https://indra-putri.github.io/pawiwahan//?to=Dewi+Sabiku+dan+calon+teman+hidup" target="_blank" rel="noopener">Buka Undangan</a>
+          <button class="secondary-button" id="restart-button" type="button">Ulangi Misi</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/assets.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
